@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BagBag</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@700;300&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="static/css/style.css" />
+  </head>
+  <div id="loader"></div>
+  <body>
+    <div id="myDiv">
+      <!-- NavBar Starts -->
+      <nav class="navbar bg-body-tertiary navbar-expand-md sticky-top">
+        <div class="container-fluid px-md-5">
+          <a class="navbar-brand fs-3" href="#">
+            <img src="static/img/logo.png" alt="bag" />
+            Bag Bag</a
+          >
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Bag Bag</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav- mx-md-4">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav- mx-md-4">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav- mx-md-4 dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Bags
+                  </a>
+                  <ul class="dropdown-menu shadow">
+                    <li><a class="dropdown-item" href="#">Male Bags</a></li>
+                    <li><a class="dropdown-item" href="#">Female Bags</a></li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">All Bags</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item mx-md-4">
+                  <a class="nav-link" href="#">Gallery</a>
+                </li>
+                <li class="nav-item mx-md-4">
+                  <a class="nav-link" href="#">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- NavBar Ends -->
+
+      <!-- Main Starts -->
+      <main>
+        <!-- Landing page start-->
+        <div class="landing-page p-3">
+          <h2>
+            Discover the <span>ultimate</span> collection of <br />stylish bags
+            here limited offer this month
+          </h2>
+          <a href="#" class="btn mt-3">Shop Now</a>
+        </div>
+        <!-- Landing page ends -->
+
+        <!-- New Arrivals -->
+        <div id="new-arrivals" class="mt-4 p-3 p-md-5 p-2">
+          <h2>New Arrivals</h2>
+          <p>Check out our latest arrivals</p>
+          <div id="new-arrivals-cont" class="row">
+            <div class="col-12 col-sm-10 col-md-6 col-lg-4 mx-auto mb-4">
+              <div></div>
+            </div>
+            <div class="col-12 col-sm-10 col-md-6 col-lg-4 mx-auto mb-4">
+              <div></div>
+            </div>
+            <div class="col-12 col-sm-10 col-md-6 col-lg-4 mx-auto mb-4">
+              <div></div>
+            </div>
+            <div class="col-12 col-sm-10 col-md-6 col-lg-4 mx-auto mb-4">
+              <div></div>
+            </div>
+            <div class="col-12 col-sm-10 col-md-6 col-lg-4 mx-auto mb-4">
+              <div></div>
+            </div>
+            <div class="col-12 col-sm-10 col-md-6 col-lg-4 mx-auto mb-4">
+              <div></div>
+            </div>
+          </div>
+        </div>
+        <!-- New Arrivals Ends -->
+
+        <!-- Exclusive Content -->
+        <div id="exclusive" class="mt-4 p-md-5 p-2">
+          <h2>Exclusive Content</h2>
+          <p>Elevate your style With our exclusive designer bags</p>
+        </div>
+        <!-- Exclusive Content Ends -->
+      </main>
+      <!-- Main Ends -->
+
+      <!-- Footer Starts -->
+      <footer></footer>
+      <!-- Footer Ends -->
+    </div>
+    <script src="static/js/script.js"></script>
+    <script src="static/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

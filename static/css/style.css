@@ -1,0 +1,194 @@
+:root {
+  --primaryColor1: #0C4160;
+  --secondaryColor: #738FA7;
+  --font1: "Outfit", sans-serif;
+  --font2: 'Merriweather', serif;
+}
+* > a {
+ user-select:none;
+}
+*::selection {
+  background-color: var(--secondaryColor);
+}
+/* Style For Loader Starts */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border-radius: 50%;
+  border-top: 16px solid var(--primaryColor1);
+  border-left: 16px solid var(--primaryColor1);
+  border-bottom: 16px solid var(--secondaryColor);
+  border-right: 16px solid var(--secondaryColor);
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+/* Style for lader ends */
+
+/* Animation for Loader Starts */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#myDiv {
+  display: none;
+}
+/* Animation for loader ends */
+
+/* Style for brand Name */
+nav {
+  background-color: white;
+  height: 11vh;
+}
+@media screen and (max-width:991px){
+  nav{
+    height: fit-content;
+  }
+}
+.navbar-brand {
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  transition: 1s;
+  color: var(--primaryColor1);
+}
+/* Style for brand name ends */
+
+/* Style for offcanvas toggle button and exit*/
+.navbar-toggler,.navbar-toggler:focus, .navbar-toggler:hover{
+  box-shadow: none;
+  outline: none;
+  border: none;
+}
+.btn-close,.btn-close:focus,.btn-close,:hover {
+  box-shadow: none;
+  outline: none;
+  border: none;
+}
+
+
+/* Style for toggle button ends */
+
+
+/* Style for nav Link */
+.nav-link {
+  border: 2px solid white;
+  font-family: var(--font1);
+  font-weight: 700;
+}
+.nav-link:hover,
+.nav-link:focus {
+  border: 2px solid var(--primaryColor1);
+}
+
+
+/* Style for nav-link ends */
+
+/* Style for Main Content starts */
+main {
+  height: fit-content;
+  width: auto;
+}
+
+/* Landing Page styling Starts */
+.landing-page {
+  height: 80vh;
+  width: auto;
+  background-image: url("/static/img/landingpagepic.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: grey;
+}
+.landing-page > h2::selection{
+  background-color: var(--primaryColor1);
+}
+.landing-page > h2 {
+  color: white;
+  text-align: center;
+  font: var(--font1);
+  font-size: 35px;
+}
+.landing-page > h2 > span {
+  color: var(--secondaryColor);
+  font-weight: 500;
+}
+.landing-page > a {
+  background-color: var(--secondaryColor);
+  color: white;
+  padding: 15px;
+  position: relative;
+  animation: jump;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  border: 1px solid var(--secondaryColor);
+}
+.landing-page > a:hover{
+  background-color: rgba(0,0,0,0);
+  border: 1px solid var(--secondaryColor);
+  color: white;
+}
+@keyframes jump {
+  0%{
+    top:0px;
+  }
+  50%{
+    top: 20px;
+  }
+  100%{
+    top: 0px;
+  }
+}
+/* Landing Page styling Ends */
+
+/* New arrivals Start */
+#new-arrivals{
+  width: auto;
+  height: fit-content;
+}
+#new-arrivals > h2{
+  font-size: 40px;
+  color: var(--primaryColor1);
+  font-family: var(--font2);
+  font-weight: 500;
+  margin: 0;
+}
+/* #new-arrivals-cont {
+  
+} */
+#new-arrivals-cont > div > div{
+  background-color: white;
+  height: 250px;
+  box-shadow: 1px 2px 5px 0px var(--secondaryColor);
+}
+#new-arivals-cont  .col-12  div {
+  background-image: url(/static/img/Bag1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+} 
+
+/* New arrivals Ends */
+/* Style for Main Content ends */

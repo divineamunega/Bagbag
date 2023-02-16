@@ -1,11 +1,11 @@
 :root {
-  --primaryColor1: #0C4160;
-  --secondaryColor: #738FA7;
+  --primaryColor1: #0c4160;
+  --secondaryColor: #738fa7;
   --font1: "Outfit", sans-serif;
-  --font2: 'Merriweather', serif;
+  --font2: "Merriweather", serif;
 }
 * > a {
- user-select:none;
+  user-select: none;
 }
 *::selection {
   background-color: var(--secondaryColor);
@@ -59,8 +59,8 @@ nav {
   background-color: white;
   height: 11vh;
 }
-@media screen and (max-width:991px){
-  nav{
+@media screen and (max-width: 991px) {
+  nav {
     height: fit-content;
   }
 }
@@ -73,20 +73,23 @@ nav {
 /* Style for brand name ends */
 
 /* Style for offcanvas toggle button and exit*/
-.navbar-toggler,.navbar-toggler:focus, .navbar-toggler:hover{
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:hover {
   box-shadow: none;
   outline: none;
   border: none;
 }
-.btn-close,.btn-close:focus,.btn-close,:hover {
+.btn-close,
+.btn-close:focus,
+.btn-close,
+:hover {
   box-shadow: none;
   outline: none;
   border: none;
 }
-
 
 /* Style for toggle button ends */
-
 
 /* Style for nav Link */
 .nav-link {
@@ -98,7 +101,6 @@ nav {
 .nav-link:focus {
   border: 2px solid var(--primaryColor1);
 }
-
 
 /* Style for nav-link ends */
 
@@ -122,7 +124,7 @@ main {
   justify-content: center;
   background-color: grey;
 }
-.landing-page > h2::selection{
+.landing-page > h2::selection {
   background-color: var(--primaryColor1);
 }
 .landing-page > h2 {
@@ -145,30 +147,30 @@ main {
   animation-iteration-count: infinite;
   border: 1px solid var(--secondaryColor);
 }
-.landing-page > a:hover{
-  background-color: rgba(0,0,0,0);
+.landing-page > a:hover {
+  background-color: rgba(0, 0, 0, 0);
   border: 1px solid var(--secondaryColor);
   color: white;
 }
 @keyframes jump {
-  0%{
-    top:0px;
+  0% {
+    top: 0px;
   }
-  50%{
+  50% {
     top: 20px;
   }
-  100%{
+  100% {
     top: 0px;
   }
 }
 /* Landing Page styling Ends */
 
 /* New arrivals Start */
-#new-arrivals{
+#new-arrivals {
   width: auto;
   height: fit-content;
 }
-#new-arrivals > h2{
+#new-arrivals > h2 {
   font-size: 40px;
   color: var(--primaryColor1);
   font-family: var(--font2);
@@ -178,17 +180,27 @@ main {
 /* #new-arrivals-cont {
   
 } */
-#new-arrivals-cont > div > div{
+#new-arrivals-cont > div > div {
   background-color: white;
   height: 250px;
   box-shadow: 1px 2px 5px 0px var(--secondaryColor);
 }
-#new-arivals-cont  .col-12  div {
-  background-image: url(/static/img/Bag1.jpg);
+.new-arrivals-pic {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-} 
-
+}
+.new-arrivals-pic1 {
+  background-image: url(/static/img/Bag1.jpg);
+}
+.new-arrivals-pic2 {
+  background-image: url(/static/img/bag2.jpg);
+}
+.new-arrivals-pic3 {
+  background-image: url(/static/img/bag3.jpg);
+}
+.new-arrivals-pic4 {
+  background-image: url(/static/img/bag4.jpg);
+}
 /* New arrivals Ends */
 /* Style for Main Content ends */

@@ -24,8 +24,8 @@
     <div id="myDiv">
       <!-- NavBar Starts -->
       <nav class="navbar bg-body-tertiary navbar-expand-md sticky-top">
-        <div class="container-fluid px-md-5">
-          <a class="navbar-brand fs-3" href="/index.html">
+        <div class="container-fluid px-sm-5">
+          <a class="navbar-brand fs-3 mx-0" href="/index.html">
             <img src="static/img/logo.png" alt="bag" />
             Bag Bag</a
           >
@@ -38,7 +38,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div
-            class="offcanvas offcanvas-end"
+            class="offcanvas offcanvas-start"
             tabindex="-1"
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel">
@@ -53,7 +53,10 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav- mx-1">
-                  <a class="nav-link active" aria-current="page" href="#"
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="/index.html"
                     >Home</a
                   >
                 </li>
@@ -73,9 +76,6 @@
                     <li><a class="dropdown-item" href="#">Male Bags</a></li>
                     <li><a class="dropdown-item" href="#">Female Bags</a></li>
                     <li>
-                      <hr class="dropdown-divider" />
-                    </li>
-                    <li>
                       <a class="dropdown-item" href="#">All Bags</a>
                     </li>
                   </ul>
@@ -88,12 +88,13 @@
                 </li>
                 <li class="nav-item mx-end d-flex">
                   <a class="nav-link d-flex" href="#"
-                    >Cart &nbsp
-                    <i
-                      class="fa fa-shopping-cart"
-                      style="font-size: 23px; color: #0c4160"
-                      aria-hidden="true"></i
-                  ></a>
+                    >Cart
+                    <span
+                      class="badge text-bg-secondary"
+                      style="height: fit-content; margin-left: 10px"
+                      >0</span
+                    >
+                  </a>
                 </li>
               </ul>
             </div>
@@ -230,17 +231,16 @@
                 aria-label="Close"></button>
             </div>
             <div class="modal-body lucky-modal-body">
-              <p>Click the price to buy now</p>
+              <p>Click the price to add to cart now</p>
               <div class="row">
                 <div class="col-12 col-lg-6">
-                  <div class="lucky-image lucky-image1"></div>
-                  <div class="lucky-price">
+                  <div class="lucky-image lucky-image1">
                     <a href="#">$50.00</a>
                   </div>
+                  <div class="lucky-price"></div>
                 </div>
                 <div class="col-12 col-lg-6">
-                  <div class="lucky-image lucky-image2"></div>
-                  <div class="lucky-price">
+                  <div class="lucky-image lucky-image2">
                     <a href="#">$50.00</a>
                   </div>
                 </div>

@@ -92,6 +92,9 @@ nav {
 /* Style for toggle button ends */
 
 /* Style for nav Link */
+.offcanvas-body {
+  height: 50px;
+}
 .nav-link {
   border: 2px solid white;
   font-family: var(--font1);
@@ -216,11 +219,11 @@ main {
 /* New arrivals Ends */
 
 /* Style for Eclusive content starts */
-#lucky  h2 {
+#lucky h2 {
   font-family: var(--font2);
   color: var(--primaryColor1);
 }
-#lucky  p {
+#lucky p {
   font-family: var(--font1);
   font-size: 18px;
   text-align: justify;
@@ -229,7 +232,7 @@ main {
   width: 100%;
   height: fit-content;
 }
-#lucky-cont >div {
+#lucky-cont > div {
   height: fit-content;
   padding: 20px;
 }
@@ -238,19 +241,18 @@ main {
   color: white;
   border: 1px solid var(--secondaryColor);
 }
-.luckybutton:hover{
+.luckybutton:hover {
   background-color: white;
   color: var(--secondaryColor);
   border: 1px solid var(--secondaryColor);
 }
 
 /* Lucky Modal Starts */
-.lucky-modal-body > div >div{
+.lucky-modal-body > div > div {
   height: fit-content;
-  
-} 
-.lucky-modal-body > p{
-  font-style:var(--font1);
+}
+.lucky-modal-body > p {
+  font-style: var(--font1);
   font-size: 24px;
 }
 .lucky-image {
@@ -262,17 +264,28 @@ main {
   transition: 2s;
   margin-bottom: 20px;
 }
-.lucky-image1{
-  background-image:  url(/static/img/luckybag/lucky1.avif);
+.lucky-image1 {
+  background-image: url(/static/img/luckybag/lucky1.avif);
 }
-.lucky-image2{
+.lucky-image2 {
   background-image: url(/static/img/luckybag/lucky2.avif);
 }
-.lucky-price > a{
-  font-size:25px;
+.lucky-image > a {
+  font-size: 25px;
   background-color: var(--secondaryColor);
   color: white;
   padding: 10px 20px;
+  position: relative;
+  top: 70%;
+}
+.modal-header h1{
+  font-family: var(--font2);
+  font-size: 24px;
+  color: var(--secondaryColor);
+  text-decoration: none;
+}
+.lucky-image a:hover{
+  filter: brightness(1.2);
 }
 /* Lucky Modal Ends */
 

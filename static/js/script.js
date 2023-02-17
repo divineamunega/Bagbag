@@ -8,23 +8,30 @@ window.addEventListener("load", function () {
 });
 
 // Changing the shadow of the navbar
-const navbar = document.querySelector('nav');
+const navbar = document.querySelector("nav");
 window.onscroll = function () {
   scrollFunction();
 };
 
 function scrollFunction() {
   if (document.body.scrollTop > 15 || document.documentElement.scrollTop > 15) {
-      navbar.style.boxShadow
-       = "1px 2px 30px 0px var(--secondaryColor)";
+    navbar.style.boxShadow = "1px 2px 30px 0px var(--secondaryColor)";
   } else {
-    navbar.style.boxShadow = 'none';
+    navbar.style.boxShadow = "none";
   }
 }
 
 // Making the background blur on modal
-const modalButton = document.querySelector('.luckybutton');
-const modal = document.querySelector('.modal')
-modalButton.addEventListener('click', function() {
-  modal.style.backdropFilter = 'blur(10px)';
-})
+const modalButton = document.querySelector(".luckybutton");
+const modal = document.querySelector(".modal");
+modalButton.addEventListener("click", function () {
+  modal.style.backdropFilter = "blur(10px)";
+});
+
+// Add to cart function for Lucky Modal
+const addToCart = document.querySelectorAll(".add-to-cart");
+for (i = 0; i < addToCart.length; i++) {
+  addToCart[i].addEventListener("click", function () {
+    
+  });
+}

@@ -177,9 +177,10 @@ main {
   font-weight: 500;
   margin: 0;
 }
-/* #new-arrivals-cont {
-  
-} */
+#new-arrivals > p {
+  font-family: var(--font1);
+  font-size: 19px;
+}
 #new-arrivals-cont > div > div {
   background-color: white;
   height: 250px;
@@ -191,16 +192,58 @@ main {
   background-repeat: no-repeat;
 }
 .new-arrivals-pic1 {
-  background-image: url(/static/img/Bag1.jpg);
+  background-image: url(/static/img/new-arrivals-pic/Bag1.jpg);
 }
 .new-arrivals-pic2 {
-  background-image: url(/static/img/bag2.jpg);
+  background-image: url(/static/img/new-arrivals-pic//bag2.jpg);
 }
 .new-arrivals-pic3 {
-  background-image: url(/static/img/bag3.jpg);
+  background-image: url(/static/img/new-arrivals-pic//bag3.jpg);
 }
 .new-arrivals-pic4 {
-  background-image: url(/static/img/bag4.jpg);
+  background-image: url(/static/img/new-arrivals-pic//bag4.jpg);
+}
+.new-arrivals-pic5 {
+  background-image: url(/static/img/new-arrivals-pic/bag5.jpg);
+}
+.new-arrivals-pic6 {
+  background-image: url(/static/img/new-arrivals-pic/bag6.png);
+}
+.new-arrivals-pic:hover {
+  filter: blur(5px) !important;
+  transition: 2s;
 }
 /* New arrivals Ends */
+
+/* Style for Eclusive content starts */
+#lucky  h2 {
+  font-family: var(--font2);
+  color: var(--primaryColor1);
+}
+#lucky  p {
+  font-family: var(--font1);
+  font-size: 18px;
+  text-align: justify;
+}
+#lucky-cont {
+  width: 100%;
+  height: fit-content;
+}
+#lucky-cont >div {
+  height: fit-content;
+  padding: 20px;
+}
+.luckybutton {
+  background-color: var(--secondaryColor);
+  color: white;
+  border: 1px solid var(--secondaryColor);
+}
+.luckybutton:hover{
+  background-color: white;
+  color: var(--secondaryColor);
+  border: 1px solid var(--secondaryColor);
+}
+
+
+/* Style for Lucky content ends */
 /* Style for Main Content ends */

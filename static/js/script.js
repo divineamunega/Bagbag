@@ -21,3 +21,10 @@ function scrollFunction() {
     navbar.style.boxShadow = 'none';
   }
 }
+
+// Making the background blur on modal
+const modalButton = document.querySelector('.luckybutton');
+const modal = document.querySelector('.modal')
+modalButton.addEventListener('click', function() {
+  modal.style.backdropFilter = 'blur(10px)';
+})

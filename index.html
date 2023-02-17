@@ -13,6 +13,9 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap"
       rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="static/css/bootstrap.min.css" />
     <link rel="stylesheet" href="static/css/style.css" />
   </head>
@@ -22,7 +25,7 @@
       <!-- NavBar Starts -->
       <nav class="navbar bg-body-tertiary navbar-expand-md sticky-top">
         <div class="container-fluid px-md-5">
-          <a class="navbar-brand fs-3" href="#">
+          <a class="navbar-brand fs-3" href="/index.html">
             <img src="static/img/logo.png" alt="bag" />
             Bag Bag</a
           >
@@ -49,15 +52,15 @@
             </div>
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav- mx-md-2">
+                <li class="nav- mx-1">
                   <a class="nav-link active" aria-current="page" href="#"
                     >Home</a
                   >
                 </li>
-                <li class="nav- mx-md-2">
+                <li class="nav- mx-1">
                   <a class="nav-link" href="#">About</a>
                 </li>
-                <li class="nav- mx-md-2 dropdown">
+                <li class="nav- mx-1 dropdown">
                   <a
                     class="nav-link dropdown-toggle"
                     href="#"
@@ -77,11 +80,20 @@
                     </li>
                   </ul>
                 </li>
-                <li class="nav-item mx-md-2">
+                <li class="nav-item mx-1">
                   <a class="nav-link" href="#">Gallery</a>
                 </li>
-                <li class="nav-item mx-md-2">
-                  <a class="nav-link" href="#">Contact Us</a>
+                <li class="nav-item mx-1">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item mx-end d-flex">
+                  <a class="nav-link d-flex" href="#"
+                    >Cart &nbsp
+                    <i
+                      class="fa fa-shopping-cart"
+                      style="font-size: 23px; color: #0c4160"
+                      aria-hidden="true"></i
+                  ></a>
                 </li>
               </ul>
             </div>
@@ -175,15 +187,16 @@
                   <div class="carousel-inner">
                     <div class="carousel-item active">
                       <img
-                        src="/static/img/change color/photo-1566150902887-9679ecc155ba.avif"
+                        src="/static/img/luckybag/lucky1.avif
+                        "
                         class="d-block w-100"
-                        alt="..." />
+                        alt="Pink Lucky Bag" />
                     </div>
                     <div class="carousel-item">
                       <img
-                        src="static/img/change color/photo-1566150905458-1bf1fc113f0d.avif"
+                        src="static/img/luckybag/lucky2.avif"
                         class="d-block w-100"
-                        alt="..." />
+                        alt="Yellow Lucky Bag" />
                     </div>
                   </div>
                 </div>
@@ -206,28 +219,32 @@
         tabindex="-1"
         aria-labelledby="exampleModalLabel"
         aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
           <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-3" id="exampleModalLabel">
-                Lucky Bag
-              </h1>
+              <h1 class="modal-title fs-3" id="exampleModalLabel">Lucky Bag</h1>
               <button
                 type="button"
                 class="btn-close"
                 data-bs-dismiss="modal"
                 aria-label="Close"></button>
             </div>
-            <div class="modal-body lucky-modal">
-              <div>
-                <div></div>
-                <div></div>
+            <div class="modal-body lucky-modal-body">
+              <p>Click the price to buy now</p>
+              <div class="row">
+                <div class="col-12 col-lg-6">
+                  <div class="lucky-image lucky-image1"></div>
+                  <div class="lucky-price">
+                    <a href="#">$50.00</a>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <div class="lucky-image lucky-image2"></div>
+                  <div class="lucky-price">
+                    <a href="#">$50.00</a>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-primary">
-                Confirm Purchase
-              </button>
             </div>
           </div>
         </div>

@@ -244,6 +244,37 @@ main {
   border: 1px solid var(--secondaryColor);
 }
 
+/* Lucky Modal Starts */
+.lucky-modal-body > div >div{
+  height: fit-content;
+  
+} 
+.lucky-modal-body > p{
+  font-style:var(--font1);
+  font-size: 24px;
+}
+.lucky-image {
+  height: 300px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 2s;
+  margin-bottom: 20px;
+}
+.lucky-image1{
+  background-image:  url(/static/img/luckybag/lucky1.avif);
+}
+.lucky-image2{
+  background-image: url(/static/img/luckybag/lucky2.avif);
+}
+.lucky-price > a{
+  font-size:25px;
+  background-color: var(--secondaryColor);
+  color: white;
+  padding: 10px 20px;
+}
+/* Lucky Modal Ends */
 
 /* Style for Lucky content ends */
 /* Style for Main Content ends */

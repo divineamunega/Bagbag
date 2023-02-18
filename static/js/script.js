@@ -29,9 +29,14 @@ modalButton.addEventListener("click", function () {
 });
 
 // Add to cart function for Lucky Modal
-const addToCart = document.querySelectorAll(".add-to-cart");
+const addToCart = document.querySelectorAll(".add-to-cart-lucky");
+const cartNumber = document.querySelectorAll('.cart-number');
+cartNumber.textContent = 0;
 for (i = 0; i < addToCart.length; i++) {
   addToCart[i].addEventListener("click", function () {
-    
+    if(cartNumber.textContent<2){
+      cartNumber.textContent++;
+      alert(` You just added 1 item to cart successfully \n Total number of items in cart:${cartNumber}`)
+    }
   });
 }

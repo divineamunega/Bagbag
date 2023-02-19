@@ -1,3 +1,4 @@
+'use strict'
 // Loding the page
 const showPage = function () {
   document.getElementById("loader").style.display = "none";
@@ -23,14 +24,15 @@ function scrollFunction() {
 
 // Making the background blur on modal
 const modalButton = document.querySelector(".luckybutton");
-const modal = document.querySelector(".modal");
-modalButton.addEventListener("click", function () {
+const modal = document.querySelector(".cartnumber");
+modalButton.addEventListener('click', function () {
   modal.style.backdropFilter = "blur(10px)";
 });
 
 // Add to cart function for Lucky Modal
 const addToCart = document.querySelectorAll(".add-to-cart-lucky");
 const cartNumber = document.querySelectorAll('.cart-number');
+console.log(cartNumber);
 cartNumber.textContent = 0;
 for (i = 0; i < addToCart.length; i++) {
   addToCart[i].addEventListener("click", function () {
@@ -40,3 +42,5 @@ for (i = 0; i < addToCart.length; i++) {
     }
   });
 }
+
+

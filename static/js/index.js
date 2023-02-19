@@ -24,23 +24,11 @@ function scrollFunction() {
 
 // Making the background blur on modal
 const modalButton = document.querySelector(".luckybutton");
-const modal = document.querySelector(".cartnumber");
+const modal = document.querySelector(".modal");
 modalButton.addEventListener('click', function () {
   modal.style.backdropFilter = "blur(10px)";
 });
 
-// Add to cart function for Lucky Modal
-const addToCart = document.querySelectorAll(".add-to-cart-lucky");
-const cartNumber = document.querySelectorAll('.cart-number');
-console.log(cartNumber);
-cartNumber.textContent = 0;
-for (i = 0; i < addToCart.length; i++) {
-  addToCart[i].addEventListener("click", function () {
-    if(cartNumber.textContent<2){
-      cartNumber.textContent++;
-      alert(` You just added 1 item to cart successfully \n Total number of items in cart:${cartNumber}`)
-    }
-  });
-}
+
 
 

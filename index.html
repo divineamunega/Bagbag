@@ -86,11 +86,12 @@
                 <li class="nav-item mx-1">
                   <a class="nav-link" href="#">Contact</a>
                 </li>
-                <li class="nav-item mx-end d-flex">
+                <li class="nav-item mx-end">
                   <a
                     class="nav-link d-flex"
                     data-bs-toggle="modal"
                     data-bs-target="#exampleModal2"
+                    href="#exampleModal2"
                     >Cart
                     <span
                       class="badge text-bg-secondary cart-number"
@@ -109,11 +110,11 @@
       <!-- Main Starts -->
       <main>
         <!-- Landing page start-->
-        <div class="landing-page p-3">
-          <h2>
-            Discover the <span>ultimate</span> collection of <br />stylish bags
-            here limited offer this month
-          </h2>
+        <div class="landing-page p-3 output" id="output">
+          <h1 class="typed-text">
+            <span class="cursor"></span>
+          </h1>
+          <p></p>
           <a href="#" class="btn mt-3">Shop Now</a>
         </div>
         <!-- Landing page ends -->
@@ -265,7 +266,8 @@
         tabindex="-1"
         aria-labelledby="exampleModalLabel"
         aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-xl-down">
+        <div
+          class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-xl-down">
           <div class="modal-content">
             <div class="modal-header">
               <h1 class="modal-title fs-3" id="exampleModalLabel">Cart</h1>
@@ -277,62 +279,54 @@
             </div>
             <div class="modal-body">
               <!-- Cart Starts -->
-              <div id="cart-container">
-                <div class="no-content">
-                  <img src="static/img/empty-cart.png" alt="empty-cart">
-                  <h3>Oopps You have no bags in the cart</h3>
+              <div class="container-fluid">
+                <div class="cart-no-item">
+                  <img src="static/img/empty-cart.png" alt="Empty Cart" />
+                  <h2>
+                    You do not have any items in the cart. <br />
+                    Add an item to cart
+                  </h2>
                 </div>
                 <div class="row">
-                  <div class="col-12 col-lg-9 mt-4">
-                    <div class=" px-3 cart-box">
-                      <div class="cart-parent">
-                        <div class="cart-content px-3 py-2">
-                          <div class="cart-img-cont">
-                            <img src="static/img/landingpagepic.jpg" alt="" />
+                  <div class="col-lg-9 col-12">
+                    <div class="cart-parent">
+                      <div class="cart-item">
+                        <div class="cart-img-cont">
+                          <img src="static/img/luckybag/lucky1.avif" alt="" />
+                        </div>
+                        <div class="cart-text-cont">
+                          <p class="cart-text">Lucky Bag 1</p>
+                          <div class="number">
+                            <button class="change-value add">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="#738fa7"
+                                class="bi bi-plus-square-fill"
+                                viewBox="0 0 16 16">
+                                <path
+                                  d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z" />
+                              </svg>
+                            </button>
+                            <span class="number-value">1</span>
+                            <button class="change-value add">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="#738fa7"
+                                class="bi bi-dash-square-fill"
+                                viewBox="0 0 16 16">
+                                <path
+                                  d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm2.5 7.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1z" />
+                              </svg>
+                            </button>
                           </div>
-                          <div class="cart-desc">
-                            <div class="cart-text-cont">
-                              <h3>Brown Mystical Bag</h3>
-                            </div>
-                            <div class="cart-button-cont">
-                              <div class="remove-button-cont">
-                                <button id="removeButton">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="22"
-                                    height="22"
-                                    fill="currentColor"
-                                    class="bi bi-trash3"
-                                    viewBox="0 0 16 16">
-                                    <path
-                                      d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z" />
-                                  </svg>
-                                </button>
-                              </div>
-                              <div class="price-cont">
-                                <p class="price">$14,000</p>
-                              </div>
-                              <div class="number">
-                                <span class="operation">+</span> <span>1</span>
-                                <span class="operation">-</span>
-                              </div>
-                            </div>
-                          </div>
+                        </div>
+                        <div class="cart-price-cont">
+                          <p cass="cart-price">$14,000</p>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="col-12 col-lg-3 mt-4 px-lg-0 px-4">
-                    <div class="sub-total-cont">
-                      <div class="summary">
-                        <div class="item">
-                          <p class="bag-name">Mystical bag</p>
-                          <p class="total-price">$45,000</p>
-                        </div>
-                        <!-- <div class="item"></div> -->
-                      </div>
-                    </div>
-                  </div>
+                  <div class="col-12 col-lg-3"></div>
                 </div>
               </div>
               <!-- Cart Ends -->

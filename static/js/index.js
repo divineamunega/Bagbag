@@ -1,12 +1,4 @@
-// 'use strict'
-// Loding the page
-const showPage = function () {
-  document.getElementById("loader").style.display = "none";
-  document.getElementById("myDiv").style.display = "block";
-};
-window.addEventListener("load", function () {
-  showPage();
-});
+'use strict'
 
 // Changing the shadow of the navbar
 const navbar = document.querySelector("nav");
@@ -32,8 +24,8 @@ let i = 0,
 
 // Typerwrite text content. Use a pipe to indicate the start of the second line "|".
 let textArray = [
-  "Carry your world in style with our versatile, durable bags",
-  "Discover the ultimate collection of stylish bags here limited offer this month",
+  "Carry your world in style with our versatile, durable bags.",
+  "Discover the ultimate collection of stylish bags here limited offer this month.",
   "Elevate your style with our sleek and sturdy men's bags.",
   "Unleash your fashion sense with our chic and spacious women's bags.",
 ];
@@ -41,7 +33,7 @@ const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 const typingDelay = 100;
 const erasingDelay = 25;
-const newTextDelay = 2000; // Delay between current and next text
+const newTextDelay = 100; // Delay between current and next text
 let textArrayIndex = 0;
 let charIndex = 0;
 
@@ -87,3 +79,10 @@ const modal = document.querySelector(".modal");
 modalButton.addEventListener("click", function () {
   modal.style.backdropFilter = "blur(10px)";
 });
+
+
+//  Toggling the like button
+
+function myFunction(x) {
+  x.classList.toggle("bi-heart-fill");
+}

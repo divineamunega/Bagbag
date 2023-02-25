@@ -1,0 +1,33 @@
+:root {
+  --primaryColor1: #0c4160;
+  --secondaryColor: #738fa7;
+  --font1: "Outfit", sans-serif;
+  --font2: "Merriweather", serif;
+}
+body{
+    position: relative;
+    scroll-behavior: smooth !important;
+}
+html{
+    scroll-behavior: smooth !important;
+}
+main{
+    width: fit-content;
+    height: fit-content;
+}
+
+.tab-pane{
+    width: 100% !important;
+    height: fit-content;
+}
+.tab-pane .col-12{
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tab-pane .col-12 .bags {
+    width: 98%;
+    background-color: red;
+    height: 98%;
+}

@@ -9,3 +9,18 @@ Choose from a variety of colors and textures, from classic black leather to tren
 Choose from a variety of colors and textures, from classic black leather to trendy prints and patterns. Each bag is unique and exclusive, ensuring that you stand out from the crowd.
 
 Experience the luxury of owning one of our exclusive bags and see the difference in quality and style. Shop now and elevate your wardrobe with our exclusive collection of designer bags.
+
+
+
+
+
+      
+      <!-- Tab panes -->
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="tab1Id" role="tabpanel"></div>
+        <div class="tab-pane fade" id="tab2Id" role="tabpanel"></div>
+        <div class="tab-pane fade" id="tab3Id" role="tabpanel"></div>
+        <div class="tab-pane fade" id="tab4Id" role="tabpanel"></div>
+        <div class="tab-pane fade" id="tab5Id" role="tabpanel"></div>
+      </div>
+      

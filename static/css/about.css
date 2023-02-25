@@ -1,0 +1,33 @@
+:root {
+  --primaryColor1: #0c4160;
+  --secondaryColor: #738fa7;
+  --font1: "Outfit", sans-serif;
+  --font2: "Merriweather", serif;
+}
+/* Style for Landing Page for about */
+.landing-about {
+  height: fit-content;
+  width: 100%;
+}
+.landing-about img {
+  --height: 70vh;
+  width: calc(var(--height) / 2.132);
+  height: var(--height);
+}
+.landing-about h1 {
+  color: var(--primaryColor1);
+  font-size: 50px;
+  font-family: var(--font2);
+}
+/* Style for Landing Page for about Ends */
+
+/* Stylye for values Section */
+.values h2 {
+  color: var(--primaryColor1);
+  font-size: 40px;
+  font-family: var(--font2);
+}
+.values-cont,.values-cont:hover{
+  height: fit-content;
+  box-shadow:1px 2px 5px 0px var(--secondaryColor);
+}

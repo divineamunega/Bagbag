@@ -4,30 +4,175 @@
   --font1: "Outfit", sans-serif;
   --font2: "Merriweather", serif;
 }
-body{
-    position: relative;
-    scroll-behavior: smooth !important;
+body {
+  position: relative;
+  scroll-behavior: smooth !important;
+  overflow-x: auto !important;
 }
-html{
-    scroll-behavior: smooth !important;
+main {
+  width: 100%;
+  height: fit-content;
 }
-main{
-    width: fit-content;
-    height: fit-content;
+main .side-bar {
+  background-color: var(--secondaryColor);
+  padding: 10px;
 }
-
-.tab-pane{
-    width: 100% !important;
-    height: fit-content;
+main .side-bar ul {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-.tab-pane .col-12{
-    height: 350px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+main .side-bar ul li {
+  width: 100%;
+  height: 50px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s;
 }
-.tab-pane .col-12 .bags {
-    width: 98%;
-    background-color: red;
-    height: 98%;
+@media screen and (max-width: 767px) {
+  main .side-bar ul {
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+  }
+  main .side-bar ul li {
+    width: 40%;
+  }
+}
+main .side-bar ul li:hover,
+main .side-bar ul li:focus {
+  background-color: white;
+  transition: 0.3s;
+}
+main .side-bar ul li:hover a,
+main .side-bar ul li:focus a {
+  color: black;
+  transition: 0.3s;
+}
+main .side-bar ul li a {
+  font-family: var(--font1);
+  color: black;
+  font-size: 20px;
+  transition: 0.3s;
+}
+.active {
+  background-color: white !important;
+  color: black !important;
+}
+.bag-cont {
+  display: none;
+  height: fit-content;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+@keyframes fade {
+  from {
+    opacity: 0%;
+    transform: scale(0.97);
+  }
+  to {
+    transform: scale(1);
+    opacity: 100%;
+  }
+}
+.bag-cont .col-12 {
+  height: 300px;
+  padding: 8px;
+}
+.bag-cont .col-12 .bag {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  box-shadow: 1px 2px 5px 0px var(--secondaryColor);
+}
+.pic-cont {
+  width: 100%;
+  height: 65%;
+  background-color: white;
+}
+.pic-cont > img {
+  width: 250.58px;
+  height: 100%;
+  aspect-ratio: 571/612;
+  display: block;
+  margin: 0 auto;
+}
+.desc-box {
+  width: 100%;
+  height: 35%;
+}
+.text-box {
+  height: 50%;
+}
+.text-box h3 {
+  text-align: center;
+  font-size: 25px;
+  font-family: var(--font2);
+  color: var(--secondaryColor);
+  margin-top: 0px;
+}
+.button-box {
+  height: 50%;
+  display: flex;
+  align-items: center;
+}
+.add-to-cart {
+  display: block;
+  height: 80%;
+  background-color: var(--secondaryColor);
+  color: white;
+  margin-left: 10px;
+  border: 1px solid var(--secondaryColor);
+  transition: 0.3s;
+}
+.add-to-cart:hover {
+  transition: 0.3s;
+  background-color: white;
+  color: var(--secondaryColor);
+}
+.like {
+  display: block;
+  margin-left: auto;
+  margin-right: 10px;
+  fill: var(--secondaryColor);
+  cursor: pointer;
+}
+.bi-heart-fill {
+  transition: 0.3s;
+  fill: red;
+}
+.bag {
+  position: relative;
+}
+.bag .price {
+  --width: auto;
+  width: var(--width);
+  position: absolute;
+  top: 0%;
+  right: 0;
+  padding: 10px;
+  background-color: var(--primaryColor1);
+  color: white;
+  font-size: 18px;
+}
+.cart-calc {
+  width: 100%;
+  height: fit-content;
+  box-shadow: 1px 2px 5px 0px var(--secondaryColor);
+}
+.up{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  right: 50px;
+  z-index: 300;
+  bottom: 50px;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

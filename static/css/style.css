@@ -190,31 +190,11 @@ main {
   box-shadow: 1px 2px 5px 0px var(--secondaryColor);
 }
 .new-arrivals-pic {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  position: relative;
 }
-.new-arrivals-pic1 {
-  background-image: url(/static/img/new-arrivals-pic/Bag1.jpg);
-}
-.new-arrivals-pic2 {
-  background-image: url(/static/img/new-arrivals-pic//bag2.jpg);
-}
-.new-arrivals-pic3 {
-  background-image: url(/static/img/new-arrivals-pic//bag3.jpg);
-}
-.new-arrivals-pic4 {
-  background-image: url(/static/img/new-arrivals-pic//bag4.jpg);
-}
-.new-arrivals-pic5 {
-  background-image: url(/static/img/new-arrivals-pic/bag5.jpg);
-}
-.new-arrivals-pic6 {
-  background-image: url(/static/img/new-arrivals-pic/bag6.png);
-}
-.new-arrivals-pic:hover {
-  filter: blur(5px) !important;
-  transition: 2s;
+.new-arrivals-pic img{
+  width: 100%;
+  height: 100%;
 }
 .new-arrivals-desc {
   width: auto;
@@ -256,6 +236,7 @@ main {
 }
 .new-arrivals-desc .like {
   position: relative;
+  cursor: pointer;
 }
 .new-arrivals-desc .bi-heart-none {
   display: block !important;
@@ -270,10 +251,20 @@ main {
   z-index: 1;
   fill: red !important;
 }
+.price {
+  position: absolute;
+  top: 0%;
+  right: 0;
+  padding: 10px;
+  background-color: var(--primaryColor1);
+  color: white;
+  font-size: 18px;
+  z-index: 1;
+}
 
 /* New arrivals Ends */
 
-/* Style for Eclusive content starts */
+/* Style for Exclusive content starts */
 #lucky h2 {
   font-family: var(--font2);
   color: var(--primaryColor1);
@@ -301,7 +292,6 @@ main {
   color: var(--secondaryColor);
   border: 1px solid var(--secondaryColor);
 }
-
 /* Lucky Modal Starts */
 .lucky-modal-body > div > div {
   height: fit-content;
@@ -345,6 +335,25 @@ main {
 /* Lucky Modal Ends */
 
 /* Style for Lucky content ends */
+
+/* Style For Versatility Starts */
+.versatility h2{
+  font-size: 44px;
+  font-family: var(--font2);
+  color: var(--primaryColor1);
+  margin: 0;
+}
+.versatility p{
+  font-size: 18px;
+  font-family: var(--font1);
+}
+.versatility .content-box{
+  height: 350px;
+}
+.versatility .carousel-item{
+  height: 350px;
+}
+/* Style For Versatility Ends */
 
 /* Style for Main Content ends */
 

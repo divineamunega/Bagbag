@@ -1,30 +1,19 @@
-//  Code for dynamic sidebar scrolling
-const sidebar = document.querySelector(".side-bar");
-const footer = document.querySelector("#footer");
-const copyright = document.querySelector("#copy-right");
-
-let lastScrollY = window.pageYOffset;
-const scrollFunc = function (e) {
-  const navHeight = document.querySelector("nav").offsetHeight;
-  const sidebarHeight = sidebar.offsetHeight;
-  const sidebarBottom = sidebarHeight + sidebar.offsetTop;
-  const footerTop = document.querySelector("#footer").offsetTop;
-  //   console.log(sidebar.style.width);
-  const  currentScrollY = window.pageYOffset;
-  if (currentScrollY > lastScrollY) {
-    scrollY = window.scrollY;
-    if (sidebarBottom >= footerTop) {
-      sidebar.style.position = "sticky";
-      sidebar.style.left = '0px'
-      sidebar.style.bottom = `${
-        footer.offsetHeight + copyright.offsetHeight 
-      }px`;
-    }
+const bagButton = document.querySelectorAll(".bag-button");
+const bagCont = document.querySelectorAll(".bag-cont");
+bagCont[0].style.display = 'flex';
+for (let i = 0; i < bagCont.length; i++) {}
+const openCity = function (evt, bagNum) {
+  for (let i = 0; i < bagButton.length; i++) {
+    bagCont[i].style.display = "none";
+    bagButton[i].className = bagButton[i].className.replace(' active','');
+    document.querySelector(`#${bagNum}`).style.display = "flex";
   }
-  else {
-    sidebar.style.position = "sticky";
-    sidebar.style.top = "0px";
-  }
-  lastScrollY = currentScrollY
+  evt.currentTarget.className += " active";
 };
-window.addEventListener("scroll", scrollFunc);
+
+
+//  Toggling the like button
+
+function myFunction(x) {
+  x.classList.toggle("bi-heart-fill");
+}

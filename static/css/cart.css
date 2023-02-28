@@ -69,3 +69,25 @@
   /* margin-top: 15px; */
   font-size: 24px;
 }
+.cart-calc-item {
+  width: auto;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  border: 1px solid var(--secondaryColor);
+}
+.cart-calc-item p {
+  font-size: 20px;
+}
+.total {
+  width: auto;
+  height: 100px;
+  font-size: 24px;
+  background-color: var(--secondaryColor);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

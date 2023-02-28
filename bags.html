@@ -61,21 +61,7 @@
                 <a class="nav-link" href="/about.html">About</a>
               </li>
               <li class="nav- mx-1 dropdown">
-                <a
-                  class="nav-link dropdown-toggle active"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Bags
-                </a>
-                <ul class="dropdown-menu shadow">
-                  <li><a class="dropdown-item" href="#">Male Bags</a></li>
-                  <li><a class="dropdown-item" href="#">Female Bags</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">All Bags</a>
-                  </li>
-                </ul>
+                <a class="nav-link active" href="#"> Bags </a>
               </li>
               <li class="nav-item mx-1">
                 <a class="nav-link" href="/gallery.html">Gallery</a>
@@ -102,158 +88,1493 @@
         </div>
       </div>
     </nav>
+    <!-- Nav Bar Ends -->
+
+    <div class="up">👆</div>
     <!-- Main Content Starts -->
-    <main class="px-sm-5">
-      <div class="d-md-flex d-block">
-        <div
-          class="nav nav-tab flex-md-column justify-content-md-start justify-content-center flex-row me-3 col-12 col-md-2 mb-3"
-          id="v-pills-tab"
-          role="tablist"
-          aria-orientation="vertical">
-          <button
-            class="nav-link active"
-            id="v-pills-home-tab"
-            data-bs-toggle="pill"
-            data-bs-target="#v-pills-home"
-            type="button"
-            role="tab"
-            aria-controls="v-pills-home"
-            aria-selected="true">
-            BackBags
-          </button>
-          <button
-            class="nav-link"
-            id="v-pills-profile-tab"
-            data-bs-toggle="pill"
-            data-bs-target="#v-pills-profile"
-            type="button"
-            role="tab"
-            aria-controls="v-pills-profile"
-            aria-selected="false">
-            HandBags
-          </button>
-          <button
-            class="nav-link"
-            id="v-pills-disabled-tab"
-            data-bs-toggle="pill"
-            data-bs-target="#v-pills-disabled"
-            type="button"
-            role="tab"
-            aria-controls="v-pills-disabled"
-            aria-selected="false">
-            Luggages
-          </button>
-          <button
-            class="nav-link"
-            id="v-pills-messages-tab"
-            data-bs-toggle="pill"
-            data-bs-target="#v-pills-messages"
-            type="button"
-            role="tab"
-            aria-controls="v-pills-messages"
-            aria-selected="false">
-            Brief Cases
-          </button>
-          <button
-            class="nav-link"
-            id="v-pills-settings-tab"
-            data-bs-toggle="pill"
-            data-bs-target="#v-pills-settings"
-            type="button"
-            role="tab"
-            aria-controls="v-pills-settings"
-            aria-selected="false">
-            Sport Bags
-          </button>
-          <button
-            class="nav-link"
-            id="v-pills-accessories-tab"
-            data-bs-toggle="pill"
-            data-bs-target="#v-pills-accessories"
-            type="button"
-            role="tab"
-            aria-controls="v-pills-settings"
-            aria-selected="false">
-            Accessories
-          </button>
+    <main class="px-md-5 container-fluid mb-5">
+      <div class="row">
+        <!-- Sidebar Starts -->
+        <div class="side-bar col-12 col-md-2">
+          <ul>
+            <li
+              role="button"
+              id="hand-bags"
+              class="bag-button active"
+              onclick="openCity(event, 'bag1')">
+              <a href="#">Hand Bags</a>
+            </li>
+            <li
+              role="button"
+              class="bag-button"
+              id="back-bags"
+              onclick="openCity(event, 'bag2')">
+              <a href="#">Back Bags</a>
+            </li>
+            <li
+              role="button"
+              class="bag-button"
+              onclick="openCity(event, 'bag3')">
+              <a href="#">bag3</a>
+            </li>
+            <li
+              role="button"
+              class="bag-button"
+              onclick="openCity(event, 'bag4')">
+              <a href="#">bag4</a>
+            </li>
+            <li
+              role="button"
+              class="bag-button"
+              onclick="openCity(event, 'bag5')">
+              <a href="#">bag5</a>
+            </li>
+            <li
+              role="button"
+              class="bag-button"
+              onclick="openCity(event, 'bag6')">
+              <a href="#">bag6</a>
+            </li>
+          </ul>
         </div>
-        <div class="tab-content col-12 col-md-10" id="v-pills-tabContent">
-          <div
-            class="tab-pane fade show active border-4 d-flex flex-wrap"
-            id="v-pills-home"
-            role="tabpanel"
-            aria-labelledby="v-pills-home-tab"
-            tabindex="0">
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="bags">
+        <!-- Sidebar Ends -->
 
+        <!-- Bag Container Start -->
+        <div class="content col-12 col-md-10">
+          <!-- Bag Section 1 Starts -->
+          <div id="bag1" class="bag-cont g-2 row">
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="bag">
+                <div class="price">$750.00</div>
+                <div class="pic-cont">
+                  <img
+                    src="static/img/bags/HandBags/handbag (1).jpg"
+                    class="bag-pic"
+                    alt="White Straped Hand Bag" />
+                </div>
+                <div class="desc-box">
+                  <div class="text-box">
+                    <h3>White Straped Hand Bag</h3>
+                  </div>
+                  <div class="button-box">
+                    <button class="add-to-cart">Add To Cart</button>
+                    <svg
+                      onclick="myFunction(this)"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      class="bi like bi-heart-none"
+                      viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                    </svg>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="bags">
-
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="bag">
+                <div class="price">$500.00</div>
+                <div class="pic-cont">
+                  <img
+                    src="static/img/bags/HandBags/handbag (2).jpg"
+                    alt="Red Small Hand Bag"
+                    class="bag-pic" />
+                </div>
+                <div class="desc-box">
+                  <div class="text-box">
+                    <h3>Red Small Hand Bag</h3>
+                  </div>
+                  <div class="button-box">
+                    <button class="add-to-cart">Add To Cart</button>
+                    <svg
+                      onclick="myFunction(this)"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      class="bi like bi-heart-none"
+                      viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                    </svg>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="bags">
-
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="bag">
+                <div class="price">$200.00</div>
+                <div class="pic-cont">
+                  <img
+                    src="static/img/bags/HandBags/handbag (3).jpg"
+                    alt="Teal Venice Bag"
+                    class="bag-pic" />
+                </div>
+                <div class="desc-box">
+                  <div class="text-box">
+                    <h3>Teal Venice Bag</h3>
+                  </div>
+                  <div class="button-box">
+                    <button class="add-to-cart">Add To Cart</button>
+                    <svg
+                      onclick="myFunction(this)"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      class="bi like bi-heart-none"
+                      viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                    </svg>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="bags">
-
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="bag">
+                <div class="price">$200.00</div>
+                <div class="pic-cont">
+                  <img
+                    src="static/img/bags/HandBags/handbag (4).jpg"
+                    style="width: 70%"
+                    alt="Scarlet Strap Bag"
+                    class="bag-pic" />
+                </div>
+                <div class="desc-box">
+                  <div class="text-box">
+                    <h3>Scarlet Strap Bag</h3>
+                  </div>
+                  <div class="button-box">
+                    <button class="add-to-cart">Add To Cart</button>
+                    <svg
+                      onclick="myFunction(this)"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      class="bi like bi-heart-none"
+                      viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                    </svg>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="bags">
-
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="bag">
+                <div class="price">$250.00</div>
+                <div class="pic-cont">
+                  <img
+                    src="static/img/bags/HandBags/handbag (5).jpg"
+                    alt="pink-handbag"
+                    class="bag-pic"
+                    style="width: 70%" />
+                </div>
+                <div class="desc-box">
+                  <div class="text-box">
+                    <h3>Pink Purse</h3>
+                  </div>
+                  <div class="button-box">
+                    <button class="add-to-cart">Add To Cart</button>
+                    <svg
+                      onclick="myFunction(this)"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      class="bi like bi-heart-none"
+                      viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                    </svg>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="bags">
-
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="bag">
+                <div class="price">$300.00</div>
+                <div class="pic-cont">
+                  <img
+                    src="static/img/bags/HandBags/handbag (6).jpg"
+                    alt="brown leather purse"
+                    style="width: 70%"
+                    class="bag-pic" />
+                </div>
+                <div class="desc-box">
+                  <div class="text-box">
+                    <h3>Brown Leather Hand Bag</h3>
+                  </div>
+                  <div class="button-box">
+                    <button class="add-to-cart">Add To Cart</button>
+                    <svg
+                      onclick="myFunction(this)"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      class="bi like bi-heart-none"
+                      viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="bag">
+                <div class="price">$50.00</div>
+                <div class="pic-cont">
+                  <img
+                    src="static/img/bags/HandBags/handbag (7).jpg"
+                    alt="Black and white shoping bag"
+                    class="bag-pic" />
+                </div>
+                <div class="desc-box">
+                  <div class="text-box">
+                    <h3>Black and white shoping bag</h3>
+                  </div>
+                  <div class="button-box">
+                    <button class="add-to-cart">Add To Cart</button>
+                    <svg
+                      onclick="myFunction(this)"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      class="bi like bi-heart-none"
+                      viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="bag">
+                <div class="price">$100.00</div>
+                <div class="pic-cont">
+                  <img
+                    src="static/img/bags/HandBags/handbag (8).jpg"
+                    alt="black hand bag"
+                    style="width: 200px"
+                    class="bag-pic" />
+                </div>
+                <div class="desc-box">
+                  <div class="text-box">
+                    <h3>Black Hand Bag</h3>
+                  </div>
+                  <div class="button-box">
+                    <button class="add-to-cart">Add To Cart</button>
+                    <svg
+                      onclick="myFunction(this)"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      class="bi like bi-heart-none"
+                      viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="bag">
+                <div class="price">$150.00</div>
+                <div class="pic-cont">
+                  <img
+                    src="static/img/bags/HandBags/handbag (9).jpg"
+                    alt="Patterned bag pic"
+                    class="bag-pic"
+                    style="width: 200px" />
+                </div>
+                <div class="desc-box">
+                  <div class="text-box">
+                    <h3>Contemporary Patterned Bag</h3>
+                  </div>
+                  <div class="button-box">
+                    <button class="add-to-cart">Add To Cart</button>
+                    <svg
+                      onclick="myFunction(this)"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      class="bi like bi-heart-none"
+                      viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                    </svg>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div
-            class="tab-pane fade"
-            id="v-pills-profile"
-            role="tabpanel"
-            aria-labelledby="v-pills-profile-tab"
-            tabindex="0">
-            ...
+          <!-- Bag Section 1 Ends -->
+
+          <!-- Bag Section 2 Starts -->
+          <div id="bag2" class="bag-cont g-2 row">
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="bag">
+                <div class="price">$150.00</div>
+                <div class="pic-cont">
+                  <img
+                    src="static/img/bags/BackBags/backbag (1).jpg"
+                    class="bag-pic"
+                    alt="White Straped Hand Bag" />
+                </div>
+                <div class="desc-box">
+                  <div class="text-box">
+                    <h3>Small Backpack</h3>
+                  </div>
+                  <div class="button-box">
+                    <button class="add-to-cart">Add To Cart</button>
+                    <svg
+                      onclick="myFunction(this)"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      class="bi like bi-heart-none"
+                      viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="bag">
+                <div class="pic-cont">
+                  <div class="price">$200.00</div>
+                  <img
+                    src="static/img/bags/BackBags/backbag (2).jpg"
+                    alt="Grey Back Bag"
+                    class="bag-pic"
+                    style="width: 150px" />
+                </div>
+                <div class="desc-box">
+                  <div class="text-box">
+                    <h3>Grey Back Bag</h3>
+                  </div>
+                  <div class="button-box">
+                    <button class="add-to-cart">Add To Cart</button>
+                    <svg
+                      onclick="myFunction(this)"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      class="bi like bi-heart-none"
+                      viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="bag">
+                <div class="pic-cont">
+                  <div class="price">$250.00</div>
+                  <img
+                    src="static/img/bags/BackBags/backbag (3).jpg"
+                    alt="Light Grey and Brown Bag"
+                    class="bag-pic"
+                    style="width: 150px" />
+                </div>
+                <div class="desc-box">
+                  <div class="text-box">
+                    <h3>Light Grey and Brown Bag</h3>
+                  </div>
+                  <div class="button-box">
+                    <button class="add-to-cart">Add To Cart</button>
+                    <svg
+                      onclick="myFunction(this)"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      class="bi like bi-heart-none"
+                      viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="bag">
+                <div class="pic-cont">
+                  <div class="price">$300.00</div>
+                  <img
+                    src="static/img/bags/BackBags/backbag (4).jpg"
+                    alt=""
+                    class="bag-pic"
+                    style="width: 150px" />
+                </div>
+                <div class="desc-box">
+                  <div class="text-box">
+                    <h3>Blue Bog Been</h3>
+                  </div>
+                  <div class="button-box">
+                    <button class="add-to-cart">Add To Cart</button>
+                    <svg
+                      onclick="myFunction(this)"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      class="bi like bi-heart-none"
+                      viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="bag">
+                <div class="pic-cont">
+                  <div class="price">$300.00</div>
+                  <img
+                    src="static/img/bags/BackBags/backbag (5).jpg"
+                    alt="Black Sport Bag"
+                    class="bag-pic"
+                    style="width: 150px" />
+                </div>
+                <div class="desc-box">
+                  <div class="text-box">
+                    <h3>Black Sport Bag</h3>
+                  </div>
+                  <div class="button-box">
+                    <button class="add-to-cart">Add To Cart</button>
+                    <svg
+                      onclick="myFunction(this)"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      class="bi like bi-heart-none"
+                      viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="bag">
+                <div class="pic-cont">
+                  <div class="price">$100.00</div>
+                  <img
+                    src="static/img/bags/BackBags/backbag (6).jpg"
+                    alt="Black and Cream Bag"
+                    class="bag-pic"
+                    style="width: 150px" />
+                </div>
+                <div class="desc-box">
+                  <div class="text-box">
+                    <h3>Black and Cream Bag</h3>
+                  </div>
+                  <div class="button-box">
+                    <button class="add-to-cart">Add To Cart</button>
+                    <svg
+                      onclick="myFunction(this)"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      class="bi like bi-heart-none"
+                      viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="bag">
+                <div class="pic-cont">
+                  <div class="price">$250.00</div>
+                  <img
+                    src="static/img/bags/BackBags/backbag (7).jpg"
+                    alt="Green Back Bag"
+                    class="bag-pic"
+                    style="width: 150px" />
+                </div>
+                <div class="desc-box">
+                  <div class="text-box">
+                    <h3>Blue Bog Been</h3>
+                  </div>
+                  <div class="button-box">
+                    <button class="add-to-cart">Add To Cart</button>
+                    <svg
+                      onclick="myFunction(this)"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      class="bi like bi-heart-none"
+                      viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="bag">
+                <div class="pic-cont"></div>
+                <div class="desc-box">
+                  <div class="text-box">
+                    <h3>Blue Bog Been</h3>
+                  </div>
+                  <div class="button-box">
+                    <button class="add-to-cart">Add To Cart</button>
+                    <svg
+                      onclick="myFunction(this)"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      class="bi like bi-heart-none"
+                      viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="bag">
+                <div class="pic-cont"></div>
+                <div class="desc-box">
+                  <div class="text-box">
+                    <h3>Blue Bog Been</h3>
+                  </div>
+                  <div class="button-box">
+                    <button class="add-to-cart">Add To Cart</button>
+                    <svg
+                      onclick="myFunction(this)"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      class="bi like bi-heart-none"
+                      viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div
-            class="tab-pane fade"
-            id="v-pills-disabled"
-            role="tabpanel"
-            aria-labelledby="v-pills-disabled-tab"
-            tabindex="0">
-            ...
+          <!-- Bag Section 2 Ends -->
+
+          <!-- Bag Section 3 Starts -->
+          <div id="bag3" class="bag-cont g-2 row">
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="bag">
+                <div class="pic-cont"></div>
+                <div class="desc-box">
+                  <div class="text-box">
+                    <h3>Blue Bog Been</h3>
+                  </div>
+                  <div class="button-box">
+                    <button class="add-to-cart">Add To Cart</button>
+                    <svg
+                      onclick="myFunction(this)"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      class="bi like bi-heart-none"
+                      viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="bag">
+                <div class="pic-cont"></div>
+                <div class="desc-box">
+                  <div class="text-box">
+                    <h3>Blue Bog Been</h3>
+                  </div>
+                  <div class="button-box">
+                    <button class="add-to-cart">Add To Cart</button>
+                    <svg
+                      onclick="myFunction(this)"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      class="bi like bi-heart-none"
+                      viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="bag">
+                <div class="pic-cont"></div>
+                <div class="desc-box">
+                  <div class="text-box">
+                    <h3>Blue Bog Been</h3>
+                  </div>
+                  <div class="button-box">
+                    <button class="add-to-cart">Add To Cart</button>
+                    <svg
+                      onclick="myFunction(this)"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      class="bi like bi-heart-none"
+                      viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="bag">
+                <div class="pic-cont"></div>
+                <div class="desc-box">
+                  <div class="text-box">
+                    <h3>Blue Bog Been</h3>
+                  </div>
+                  <div class="button-box">
+                    <button class="add-to-cart">Add To Cart</button>
+                    <svg
+                      onclick="myFunction(this)"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      class="bi like bi-heart-none"
+                      viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="bag">
+                <div class="pic-cont"></div>
+                <div class="desc-box">
+                  <div class="text-box">
+                    <h3>Blue Bog Been</h3>
+                  </div>
+                  <div class="button-box">
+                    <button class="add-to-cart">Add To Cart</button>
+                    <svg
+                      onclick="myFunction(this)"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      class="bi like bi-heart-none"
+                      viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="bag">
+                <div class="pic-cont"></div>
+                <div class="desc-box">
+                  <div class="text-box">
+                    <h3>Blue Bog Been</h3>
+                  </div>
+                  <div class="button-box">
+                    <button class="add-to-cart">Add To Cart</button>
+                    <svg
+                      onclick="myFunction(this)"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      class="bi like bi-heart-none"
+                      viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="bag">
+                <div class="pic-cont"></div>
+                <div class="desc-box">
+                  <div class="text-box">
+                    <h3>Blue Bog Been</h3>
+                  </div>
+                  <div class="button-box">
+                    <button class="add-to-cart">Add To Cart</button>
+                    <svg
+                      onclick="myFunction(this)"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      class="bi like bi-heart-none"
+                      viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="bag">
+                <div class="pic-cont"></div>
+                <div class="desc-box">
+                  <div class="text-box">
+                    <h3>Blue Bog Been</h3>
+                  </div>
+                  <div class="button-box">
+                    <button class="add-to-cart">Add To Cart</button>
+                    <svg
+                      onclick="myFunction(this)"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      class="bi like bi-heart-none"
+                      viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="bag">
+                <div class="pic-cont"></div>
+                <div class="desc-box">
+                  <div class="text-box">
+                    <h3>Blue Bog Been</h3>
+                  </div>
+                  <div class="button-box">
+                    <button class="add-to-cart">Add To Cart</button>
+                    <svg
+                      onclick="myFunction(this)"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      class="bi like bi-heart-none"
+                      viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div
-            class="tab-pane fade"
-            id="v-pills-messages"
-            role="tabpanel"
-            aria-labelledby="v-pills-messages-tab"
-            tabindex="0">
-            ...
+          <!-- Bag Section 3 Ends -->
+
+          <!-- Bag Section 4 Starts -->
+          <div id="bag4" class="bag-cont g-2 row">
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="bag">
+                <div class="pic-cont"></div>
+                <div class="desc-box">
+                  <div class="text-box">
+                    <h3>Blue Bog Been</h3>
+                  </div>
+                  <div class="button-box">
+                    <button class="add-to-cart">Add To Cart</button>
+                    <svg
+                      onclick="myFunction(this)"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      class="bi like bi-heart-none"
+                      viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="bag">
+                <div class="pic-cont"></div>
+                <div class="desc-box">
+                  <div class="text-box">
+                    <h3>Blue Bog Been</h3>
+                  </div>
+                  <div class="button-box">
+                    <button class="add-to-cart">Add To Cart</button>
+                    <svg
+                      onclick="myFunction(this)"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      class="bi like bi-heart-none"
+                      viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="bag">
+                <div class="pic-cont"></div>
+                <div class="desc-box">
+                  <div class="text-box">
+                    <h3>Blue Bog Been</h3>
+                  </div>
+                  <div class="button-box">
+                    <button class="add-to-cart">Add To Cart</button>
+                    <svg
+                      onclick="myFunction(this)"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      class="bi like bi-heart-none"
+                      viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="bag">
+                <div class="pic-cont"></div>
+                <div class="desc-box">
+                  <div class="text-box">
+                    <h3>Blue Bog Been</h3>
+                  </div>
+                  <div class="button-box">
+                    <button class="add-to-cart">Add To Cart</button>
+                    <svg
+                      onclick="myFunction(this)"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      class="bi like bi-heart-none"
+                      viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="bag">
+                <div class="pic-cont"></div>
+                <div class="desc-box">
+                  <div class="text-box">
+                    <h3>Blue Bog Been</h3>
+                  </div>
+                  <div class="button-box">
+                    <button class="add-to-cart">Add To Cart</button>
+                    <svg
+                      onclick="myFunction(this)"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      class="bi like bi-heart-none"
+                      viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="bag">
+                <div class="pic-cont"></div>
+                <div class="desc-box">
+                  <div class="text-box">
+                    <h3>Blue Bog Been</h3>
+                  </div>
+                  <div class="button-box">
+                    <button class="add-to-cart">Add To Cart</button>
+                    <svg
+                      onclick="myFunction(this)"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      class="bi like bi-heart-none"
+                      viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="bag">
+                <div class="pic-cont"></div>
+                <div class="desc-box">
+                  <div class="text-box">
+                    <h3>Blue Bog Been</h3>
+                  </div>
+                  <div class="button-box">
+                    <button class="add-to-cart">Add To Cart</button>
+                    <svg
+                      onclick="myFunction(this)"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      class="bi like bi-heart-none"
+                      viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="bag">
+                <div class="pic-cont"></div>
+                <div class="desc-box">
+                  <div class="text-box">
+                    <h3>Blue Bog Been</h3>
+                  </div>
+                  <div class="button-box">
+                    <button class="add-to-cart">Add To Cart</button>
+                    <svg
+                      onclick="myFunction(this)"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      class="bi like bi-heart-none"
+                      viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="bag">
+                <div class="pic-cont"></div>
+                <div class="desc-box">
+                  <div class="text-box">
+                    <h3>Blue Bog Been</h3>
+                  </div>
+                  <div class="button-box">
+                    <button class="add-to-cart">Add To Cart</button>
+                    <svg
+                      onclick="myFunction(this)"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      class="bi like bi-heart-none"
+                      viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div
-            class="tab-pane fade"
-            id="v-pills-settings"
-            role="tabpanel"
-            aria-labelledby="v-pills-settings-tab"
-            tabindex="0">
-            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+          <!-- Bag Section 4 Ends -->
+
+          <!-- Bag Section 5 Starts -->
+          <div id="bag5" class="bag-cont g-2 row">
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="bag">
+                <div class="pic-cont"></div>
+                <div class="desc-box">
+                  <div class="text-box">
+                    <h3>Blue Bog Been</h3>
+                  </div>
+                  <div class="button-box">
+                    <button class="add-to-cart">Add To Cart</button>
+                    <svg
+                      onclick="myFunction(this)"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      class="bi like bi-heart-none"
+                      viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="bag">
+                <div class="pic-cont"></div>
+                <div class="desc-box">
+                  <div class="text-box">
+                    <h3>Blue Bog Been</h3>
+                  </div>
+                  <div class="button-box">
+                    <button class="add-to-cart">Add To Cart</button>
+                    <svg
+                      onclick="myFunction(this)"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      class="bi like bi-heart-none"
+                      viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="bag">
+                <div class="pic-cont"></div>
+                <div class="desc-box">
+                  <div class="text-box">
+                    <h3>Blue Bog Been</h3>
+                  </div>
+                  <div class="button-box">
+                    <button class="add-to-cart">Add To Cart</button>
+                    <svg
+                      onclick="myFunction(this)"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      class="bi like bi-heart-none"
+                      viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="bag">
+                <div class="pic-cont"></div>
+                <div class="desc-box">
+                  <div class="text-box">
+                    <h3>Blue Bog Been</h3>
+                  </div>
+                  <div class="button-box">
+                    <button class="add-to-cart">Add To Cart</button>
+                    <svg
+                      onclick="myFunction(this)"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      class="bi like bi-heart-none"
+                      viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="bag">
+                <div class="pic-cont"></div>
+                <div class="desc-box">
+                  <div class="text-box">
+                    <h3>Blue Bog Been</h3>
+                  </div>
+                  <div class="button-box">
+                    <button class="add-to-cart">Add To Cart</button>
+                    <svg
+                      onclick="myFunction(this)"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      class="bi like bi-heart-none"
+                      viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="bag">
+                <div class="pic-cont"></div>
+                <div class="desc-box">
+                  <div class="text-box">
+                    <h3>Blue Bog Been</h3>
+                  </div>
+                  <div class="button-box">
+                    <button class="add-to-cart">Add To Cart</button>
+                    <svg
+                      onclick="myFunction(this)"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      class="bi like bi-heart-none"
+                      viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="bag">
+                <div class="pic-cont"></div>
+                <div class="desc-box">
+                  <div class="text-box">
+                    <h3>Blue Bog Been</h3>
+                  </div>
+                  <div class="button-box">
+                    <button class="add-to-cart">Add To Cart</button>
+                    <svg
+                      onclick="myFunction(this)"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      class="bi like bi-heart-none"
+                      viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="bag">
+                <div class="pic-cont"></div>
+                <div class="desc-box">
+                  <div class="text-box">
+                    <h3>Blue Bog Been</h3>
+                  </div>
+                  <div class="button-box">
+                    <button class="add-to-cart">Add To Cart</button>
+                    <svg
+                      onclick="myFunction(this)"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      class="bi like bi-heart-none"
+                      viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="bag">
+                <div class="pic-cont"></div>
+                <div class="desc-box">
+                  <div class="text-box">
+                    <h3>Blue Bog Been</h3>
+                  </div>
+                  <div class="button-box">
+                    <button class="add-to-cart">Add To Cart</button>
+                    <svg
+                      onclick="myFunction(this)"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      class="bi like bi-heart-none"
+                      viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div
-            class="tab-pane fade"
-            id="v-pills-accessories"
-            role="tabpanel"
-            aria-labelledby="v-pills-accessories-tab"
-            tabindex="0"></div>
+          <!-- Bag Section 5 Ends -->
+
+          <!-- Bag Section 6 Starts -->
+          <div id="bag6" class="bag-cont g-2 row">
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="bag">
+                <div class="pic-cont"></div>
+                <div class="desc-box">
+                  <div class="text-box">
+                    <h3>Blue Bog Been</h3>
+                  </div>
+                  <div class="button-box">
+                    <button class="add-to-cart">Add To Cart</button>
+                    <svg
+                      onclick="myFunction(this)"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      class="bi like bi-heart-none"
+                      viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="bag">
+                <div class="pic-cont"></div>
+                <div class="desc-box">
+                  <div class="text-box">
+                    <h3>Blue Bog Been</h3>
+                  </div>
+                  <div class="button-box">
+                    <button class="add-to-cart">Add To Cart</button>
+                    <svg
+                      onclick="myFunction(this)"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      class="bi like bi-heart-none"
+                      viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="bag">
+                <div class="pic-cont"></div>
+                <div class="desc-box">
+                  <div class="text-box">
+                    <h3>Blue Bog Been</h3>
+                  </div>
+                  <div class="button-box">
+                    <button class="add-to-cart">Add To Cart</button>
+                    <svg
+                      onclick="myFunction(this)"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      class="bi like bi-heart-none"
+                      viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="bag">
+                <div class="pic-cont"></div>
+                <div class="desc-box">
+                  <div class="text-box">
+                    <h3>Blue Bog Been</h3>
+                  </div>
+                  <div class="button-box">
+                    <button class="add-to-cart">Add To Cart</button>
+                    <svg
+                      onclick="myFunction(this)"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      class="bi like bi-heart-none"
+                      viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="bag">
+                <div class="pic-cont"></div>
+                <div class="desc-box">
+                  <div class="text-box">
+                    <h3>Blue Bog Been</h3>
+                  </div>
+                  <div class="button-box">
+                    <button class="add-to-cart">Add To Cart</button>
+                    <svg
+                      onclick="myFunction(this)"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      class="bi like bi-heart-none"
+                      viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="bag">
+                <div class="pic-cont"></div>
+                <div class="desc-box">
+                  <div class="text-box">
+                    <h3>Blue Bog Been</h3>
+                  </div>
+                  <div class="button-box">
+                    <button class="add-to-cart">Add To Cart</button>
+                    <svg
+                      onclick="myFunction(this)"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      class="bi like bi-heart-none"
+                      viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="bag">
+                <div class="pic-cont"></div>
+                <div class="desc-box">
+                  <div class="text-box">
+                    <h3>Blue Bog Been</h3>
+                  </div>
+                  <div class="button-box">
+                    <button class="add-to-cart">Add To Cart</button>
+                    <svg
+                      onclick="myFunction(this)"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      class="bi like bi-heart-none"
+                      viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="bag">
+                <div class="pic-cont"></div>
+                <div class="desc-box">
+                  <div class="text-box">
+                    <h3>Blue Bog Been</h3>
+                  </div>
+                  <div class="button-box">
+                    <button class="add-to-cart">Add To Cart</button>
+                    <svg
+                      onclick="myFunction(this)"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      class="bi like bi-heart-none"
+                      viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="bag">
+                <div class="pic-cont"></div>
+                <div class="desc-box">
+                  <div class="text-box">
+                    <h3>Blue Bog Been</h3>
+                  </div>
+                  <div class="button-box">
+                    <button class="add-to-cart">Add To Cart</button>
+                    <svg
+                      onclick="myFunction(this)"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      class="bi like bi-heart-none"
+                      viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Bag Section 6 Ends -->
         </div>
+        <!-- Bag Container Ends -->
       </div>
     </main>
     <!-- Main Content Ends -->
@@ -397,6 +1718,7 @@
       </div>
     </footer>
     <!-- footer section end -->
+
     <!-- footer copy right section start -->
     <section id="copy-right">
       <div class="copy-right-sec">
@@ -404,7 +1726,51 @@
       </div>
     </section>
     <!-- footer copy right section end -->
-    <!-- <script src="static/js/index.js"></script> -->
+
+    <!-- Cart Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal2"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div
+        class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-xl-down">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-3" id="exampleModalLabel">Cart</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- Cart Starts -->
+            <div class="container-fluid">
+              <div class="cart-no-item">
+                <img src="static/img/empty-cart.png" alt="Empty Cart" />
+                <h2>
+                  You do not have any items in the cart. <br />
+                  Add an item to cart
+                </h2>
+              </div>
+              <div class="row">
+                <div class="col-lg-8 col-12">
+                  <div class="cart-parent"></div>
+                </div>
+                <div class="col-12 col-lg-4">
+                  <div class="cart-calc"></div>
+                </div>
+              </div>
+            </div>
+            <!-- Cart Ends -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Cart Modal ends -->
+    <script src="static/js/script.js"></script>
     <script src="static/js/bootstrap.bundle.min.js"></script>
     <script src="/static/js/bags.js"></script>
     <script src="static/js/cart.js"></script>

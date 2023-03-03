@@ -15,7 +15,7 @@
   height: var(--height);
 }
 .landing-about h1 {
-  color: var(--primaryColor1);
+  color: var(--secondaryColor);
   font-size: 50px;
   font-family: var(--font2);
 }
@@ -23,11 +23,80 @@
 
 /* Stylye for values Section */
 .values h2 {
-  color: var(--primaryColor1);
+  color: var(--secondaryColor);
   font-size: 40px;
   font-family: var(--font2);
 }
-.values-cont,.values-cont:hover{
+.values-cont {
   height: fit-content;
-  box-shadow:1px 2px 5px 0px var(--secondaryColor);
+  box-shadow: 1px 2px 5px 0px var(--secondaryColor);
+  transition: 0.3s;
+  padding: 5px;
 }
+.values-cont h4 {
+  font-family: var(--font2);
+  color: var(--secondaryColor);
+  font-size: 30px;
+}
+.values-cont p {
+  text-align: center;
+}
+.values-cont:hover {
+  box-shadow: 1px 2px 7px 0px var(--secondaryColor);
+  transition: 0.3s;
+}
+/* Style for Values section Ends */
+
+/* Customer Reviews Start */
+.customer-testimonials h2 {
+  color: var(--secondaryColor);
+  font-size: 40px;
+  font-family: var(--font2);
+}
+.review-box {
+  height: 200px;
+  box-shadow: 1px 2px 5px 0px var(--secondaryColor);
+  transition: .3s;
+}
+.review-box:hover{
+  transition: .3s;
+  box-shadow: 1px 2px 7px 0px var(--secondaryColor);
+}
+.review-box .ratingNpic{
+  height: 45%;
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+}
+.customer-pic{
+  width: 70px;
+  height: 70px;
+  background-color: red;
+  border-radius: 50%;
+}
+.customer-pic  img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.customer-name{
+  margin-left: 15px;
+  font-size: 18px;
+  font-family: var(--font1);
+  font-weight: 700;
+}
+.review-text-box{
+  padding: 0 20px;
+}
+.review-text{
+  font-family: var(--font1);
+  font-weight: 500;
+}
+.stars{
+  margin-left: auto;
+}
+.star{
+  fill: gold;
+}
+/* Customer Reviews Ends */

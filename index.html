@@ -65,10 +65,23 @@
               </li>
               <li class="nav- mx-1 dropdown">
                 <a
-                  class="nav-link"
-                  href="bags.html">
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">
                   Bags
                 </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="bags-male.html">Men Bags</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="bag-female.html"
+                      >Women Bags</a
+                    >
+                  </li>
+                </ul>
               </li>
               <li class="nav-item mx-1">
                 <a class="nav-link" href="gallery.html">Gallery</a>
@@ -342,20 +355,25 @@
                     data-bs-target="#carouselId"
                     data-bs-slide-to="0"
                     class="active"
+                    style="background-color: black;"
                     aria-current="true"
-                    aria-label="First slide"></li>
+                    aria-label="First slide">
+                  </li>
                   <li
                     data-bs-target="#carouselId"
                     data-bs-slide-to="1"
-                    aria-label="Second slide"></li>
+                    aria-label="Second slide"
+                    style="background-color: #97bcd2;"></li>
                   <li
                     data-bs-target="#carouselId"
                     data-bs-slide-to="2"
-                    aria-label="Third slide"></li>
+                    aria-label="Third slide"
+                    style="background-color: rgb(207, 207, 207);"></li>
                   <li
                     data-bs-target="#carouselId"
                     data-bs-slide-to="3"
-                    aria-label="Fourth slide"></li>
+                    aria-label="Fourth slide"
+                    style="background-color: #904542;"></li>
                 </ol>
                 <div class="carousel-inner" role="listbox">
                   <div class="carousel-item active">
@@ -629,6 +647,7 @@
       </div>
     </div>
     <!-- Cart Modal ends -->
+    <script src="static/js/script.js"></script>
     <script src="static/js/index.js"></script>
     <script src="static/js/cart.js"></script>
     <script src="static/js/bootstrap.bundle.min.js"></script>

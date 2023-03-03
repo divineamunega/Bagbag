@@ -1,0 +1,49 @@
+:root {
+  --primaryColor1: #0c4160;
+  --secondaryColor: #738fa7;
+  --font1: "Outfit", sans-serif;
+  --font2: "Merriweather", serif;
+}
+.contact h1{
+  font-family: var(--font2);
+  color: var(--secondaryColor);
+}
+.contact-box{
+  width:100%;
+  height: 500px;
+}
+form{
+  box-shadow: 1px 2px 5px 0px var(--secondaryColor) !important;
+  padding: 30px;
+}
+.rule{
+  width: 100%;
+  height: 1px;
+  border: 1px solid var(--secondaryColor);
+  margin: 50px 0;
+}
+.contact-text{
+  font-weight: 700;
+  font-family: var(--font1);
+}
+.contact-box .form-control:hover , .contact-box .form-control:focus{
+  border: 2px solid var(--primaryColor1);
+  box-shadow: none;
+}
+.submit{
+  background-color: var(--primaryColor1);
+  border: 1px solid var(--primaryColor1);
+}
+.map h2{
+  font-family: var(--font2);
+  color: var(--secondaryColor);
+}
+.map p{
+  font-family: var(--font1);
+  font-weight: 500;
+  font-size: 18px;
+}
+.FAQs h2{
+  font-family: var(--font2);
+  color: var(--secondaryColor);
+}

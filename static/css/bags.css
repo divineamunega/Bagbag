@@ -37,6 +37,7 @@ main .side-bar ul li {
   main .side-bar ul {
     flex-direction: row !important;
     flex-wrap: wrap !important;
+    justify-content: center;
   }
   main .side-bar ul li {
     width: 40%;
@@ -47,14 +48,14 @@ main .side-bar ul li:focus {
   background-color: white;
   transition: 0.3s;
 }
-main .side-bar ul li:hover a,
-main .side-bar ul li:focus a {
+main .side-bar ul li:hover,
+main .side-bar ul li:focus  {
   color: black;
   transition: 0.3s;
 }
-main .side-bar ul li a {
+main .side-bar ul li {
   font-family: var(--font1);
-  color: black;
+  color: white;
   font-size: 20px;
   transition: 0.3s;
 }

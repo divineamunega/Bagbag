@@ -14,6 +14,21 @@ html{
   scroll-behavior:smooth;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+} 
+
 /* Style for brand Name */
 nav {
   background-color: white;
@@ -21,7 +36,7 @@ nav {
 }
 @media screen and (max-width: 991px) {
   nav {
-    height: fit-content;
+    height: 13vh !important;
   }
 }
 .navbar-brand {
@@ -76,37 +91,30 @@ main {
 
 /* Landing Page styling Starts */
 .landing-page {
-  height: 80vh !important;
-  width: 100% !important;
-  background-image: url("/static/img/landingpagepic.jpg");
+  width: 100%;
   background-repeat: no-repeat;
-  background-position: center;
+  /* background-position: center; */
   background-size: cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: grey;
 }
 .landing-page > h1::selection {
   background-color: var(--primaryColor1);
 }
-.landing-page > h1 {
-  color: white;
-  text-align: center;
+.landing-page  h1 {
+  color: var(--primaryColor1);
+  /* text-align: center; */
   font: var(--font1);
-  font-size: 35px;
+  font-size: 50px;
+  font-weight: 600;
+  margin-top: 50px;
+  text-shadow: 0.5px 0.5px 0.3px black;
+}
+.landing-page p{
+  font-size: 20px;
 }
 .landing-page > h1 > span {
   font-weight: 500;
 }
 /* Style for cursor and text */
-.landing-page {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .landing-page .cursor {
   display: inline-block;
   background-color: #ccc;
@@ -115,6 +123,9 @@ main {
   height: 2px;
   animation: blink 1s infinite;
   color: rgba(0, 0, 0, 0);
+}
+.landing-page img {
+  width:100%;
 }
 .landing-page p span.cursor.typing {
   animation: none;
@@ -137,7 +148,7 @@ main {
   }
 }
 /* Style for cursor and text ends */
-.landing-page > a {
+.landing-page  a {
   background-color: var(--secondaryColor);
   color: white;
   padding: 15px;
@@ -146,8 +157,9 @@ main {
   animation-duration: 2s;
   animation-iteration-count: infinite;
   border: 1px solid var(--secondaryColor);
+  border-radius: 10px;
 }
-.landing-page > a:hover {
+.landing-page  a:hover {
   background-color: rgba(0, 0, 0, 0);
   border: 1px solid var(--secondaryColor);
   color: white;
@@ -157,13 +169,13 @@ main {
 }
 @keyframes jump {
   0% {
-    top: 0px;
-  }
-  50% {
     top: 20px;
   }
+  50% {
+    top: 40px;
+  }
   100% {
-    top: 0px;
+    top: 20px;
   }
 }
 /* Landing Page styling Ends */
@@ -186,7 +198,7 @@ main {
 }
 #new-arrivals-cont > div > div {
   background-color: white;
-  height: 250px;
+  height: 200px;
   box-shadow: 1px 2px 5px 0px var(--secondaryColor);
 }
 .new-arrivals-pic {

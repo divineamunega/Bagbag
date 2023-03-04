@@ -61,7 +61,24 @@
                 <a class="nav-link" href="/about.html">About</a>
               </li>
               <li class="nav- mx-1 dropdown">
-                <a class="nav-link active" href="#"> Bags </a>
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Bags
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="bags-male.html">Men Bags</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="bag-female.html"
+                      >Women Bags</a
+                    >
+                  </li>
+                </ul>
               </li>
               <li class="nav-item mx-1">
                 <a class="nav-link" href="/gallery.html">Gallery</a>
@@ -90,7 +107,6 @@
     </nav>
     <!-- Nav Bar Ends -->
 
-    <div class="up">👆</div>
     <!-- Main Content Starts -->
     <main class="px-md-5 container-fluid mb-5">
       <div class="row">
@@ -102,26 +118,26 @@
               id="hand-bags"
               class="bag-button active"
               onclick="openCity(event, 'bag1')">
-              <a href="#">Hand Bags</a>
+              Hand Bags
             </li>
             <li
               role="button"
               class="bag-button"
               id="back-bags"
               onclick="openCity(event, 'bag2')">
-              <a href="#">Satchels</a>
+              Satchels
             </li>
             <li
               role="button"
               class="bag-button"
               onclick="openCity(event, 'bag3')">
-              <a href="#">CrossBody</a>
+              CrossBody
             </li>
             <li
               role="button"
               class="bag-button"
               onclick="openCity(event, 'bag4')">
-              <a href="#">Tote</a>
+              Tote
             </li>
           </ul>
         </div>
@@ -1269,11 +1285,7 @@
           </div>
           <div class="col-md-3 col-12 mx-auto mb-5 mb-sm-0">
             <div class="useful-link mx-auto">
-              <h2>Useful Links</h2>
-              <img
-                src="./assets/images/about/home_line.png"
-                alt=""
-                class="img-fluid" />
+              <h2 class="mb-4">Useful Links</h2>
               <div class="use-links">
                 <li>
                   <a href="index.html"
@@ -1300,8 +1312,7 @@
           </div>
           <div class="col-md-3 col-12 mx-auto mb-5 mb-sm-0">
             <div class="social-links mx-auto">
-              <h2>Follow Us</h2>
-              <img src="./assets/images/about/home_line.png" alt="" />
+              <h2 class="mb-4">Follow Us</h2>
               <div class="social-icons">
                 <li>
                   <a href="https://web.facebook.com/divineamunega1"
@@ -1354,11 +1365,7 @@
           </div>
           <div class="col-md-3 col-12 mx-auto mb-5 mb-sm-0">
             <div class="address mx-auto">
-              <h2>Address</h2>
-              <img
-                src="./assets/images/about/home_line.png"
-                alt=""
-                class="img-fluid" />
+              <h2 class="mb-4">Address</h2>
               <div class="address-links">
                 <li class="address1">
                   <i class="fa-solid fa-location-dot"></i>

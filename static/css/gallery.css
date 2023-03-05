@@ -15,8 +15,9 @@ main h1{
 .gallery {
  display: grid;
  grid-template-columns:repeat(auto-fit,minmax(50px,1fr));
- grid-template-rows: repeat(20,50px);
+ grid-template-rows: repeat(auto,50px);
  grid-gap: 5px;
+ place-content: center;
 }
 .pic1{
     grid-row: span 8;
@@ -37,4 +38,28 @@ main h1{
 .pic5{
     grid-column: span 6;
     grid-row: span 4;
+}
+.pic6{
+    grid-column: span 7;
+    grid-row: span 6;
+}
+.pic7{
+    grid-column: span 7;
+    grid-row: span 6;
+}
+.pic8{
+    grid-column:span 7;
+    grid-row: span 6;
+}
+.pic9{
+    grid-column: span 7;
+    grid-row: span 7;
+}
+.pic10{
+    grid-column: span 7;
+    grid-row: span 5;
+}
+.pic11{
+    grid-column: span 7;
+    grid-row: span 7;
 }

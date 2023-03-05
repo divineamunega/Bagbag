@@ -162,7 +162,7 @@ main {
 .landing-page  a:hover {
   background-color: rgba(0, 0, 0, 0);
   border: 1px solid var(--secondaryColor);
-  color: white;
+  color: var(--secondaryColor);
 }
 .landing-page > a:focus {
   animation: none;

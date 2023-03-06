@@ -58,6 +58,11 @@
   box-shadow: 1px 2px 5px 0px var(--secondaryColor);
   transition: .3s;
 }
+@media screen and (max-width:1200px){
+  .review-box{
+    height: fit-content !important;
+  }
+}
 .review-box:hover{
   transition: .3s;
   box-shadow: 1px 2px 7px 0px var(--secondaryColor);

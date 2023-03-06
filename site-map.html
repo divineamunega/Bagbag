@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bag Bag</title>
+    <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,10 +19,36 @@
     <link rel="stylesheet" href="static/css/aos.css" />
     <link rel="stylesheet" href="static/css/bootstrap.min.css" />
     <link rel="stylesheet" href="static/css/style.css" />
-    <link rel="stylesheet" href="static/css/contact.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="static/css/gallery.css" />
   </head>
+  <style>
+    main{
+        height:90vh;
+        display: flex;
+        flex-direction: column;
+        background-image: url(static/img/landingpagepic.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+    main ul li{
+        list-style-type: disc;
+        list-style:circle;
+    }
+    main ul li {
+        font-family: 'Outfit', sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        color: white;
+    }
+    h1{
+        font-family:"Merriweather", serif;
+        color: white !important;
+    }
+  </style>
   <body>
-    <!-- NavBar Starts -->
     <nav class="navbar bg-body-tertiary navbar-expand-md sticky-top">
       <div class="container-fluid px-sm-5">
         <a class="navbar-brand fs-3 mx-0" href="/index.html">
@@ -91,221 +117,46 @@
         </div>
       </div>
     </nav>
-    <!-- NavBar Ends -->
-    <main>
-      <div class="contact container-fluid px-sm-5 mt-5">
-        <div class="row">
-          <div class="col-md-6 col-12">
-            <div class="contact-box">
-              <div class="">
-                <h1>GET IN TOUCH</h1>
-                <div class="rule"></div>
-                <p class="contact-text my-4">
-                  We offers you the convenience of sending us a letter online,
-                  allowing you to easily connect with our team.Send your
-                  questions, comments and observations through this form.
-                </p>
-                <p>
-                  At BagBag, we value our customers and their feedback. We
-                  encourage our customers to reach out to us with any questions,
-                  concerns, or feedback they may have. Our customer service team
-                  is always ready to assist with any inquiries, and we are
-                  committed to ensuring that every customer interaction is a
-                  positive one.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-12">
-            <div class="contact-box">
-              <form class="row g-3" method="POST" action="https://formspree.io/f/mnqyvrve">
-                <div class="col-md-6 col-12">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="First name"
-                    aria-label="First name"
-                    name="First name" />
-                </div>
-                <div class="col-md-6 col-12">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Last name"
-                    aria-label="Last name" 
-                    name="Last-Name"/>
-                </div>
-                <div class="col-12">
-                  <label for="inputEmail4" class="form-label" name="E-mail">Email</label>
-                  <input type="email" class="form-control" id="inputEmail4" />
-                </div>
-                <div class="mb-3">
-                  <label for="exampleFormControlTextarea1" class="form-label"
-                    >Write a Message to us</label
-                  >
-                  <textarea
-                    class="form-control"
-                    id="exampleFormControlTextarea1"
-                    rows="3"
-                    name="Message"></textarea>
-                </div>
-                <div class="col-12">
-                  <button type="submit" class="btn btn-primary submit">
-                    Submit
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="map container-fluid px-sm-5 mt-5 mb-5">
-        <div class="row">
-          <div
-            class="col-md-6 col-12 d-flex justify-content-center flex-column">
-            <h2>FIND US</h2>
-            <p>
-              We understand the importance of providing clear and concise
-              information to our customers, which is why we have included a map
-              to help visitors find us easily. You can use the map to get
-              directions to our location, view nearby landmarks, and plan your
-              visit. Whether you are a potential customer or an existing one, we
-              welcome you to visit us at our location and experience our
-              products and services firsthand. If you have any questions or
-              concerns, please feel free to reach out to our customer service
-              team. We are always here to help.
-            </p>
-          </div>
-          <div class="col-md-6 col-12">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.497979641656!2d3.2378201!3d6.708914500000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b995b41b7dd6d%3A0xb6c08985374e0e09!2sAptech%20Computer%20Education%20-Sango%20Ota!5e0!3m2!1sen!2sng!4v1677752561363!5m2!1sen!2sng"
-              width="600"
-              height="450"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-        </div>
-      </div>
-      <div class="FAQs container-fluid px-sm-5 my-5">
-        <h2>Frequently Asked Questions</h2>
-        <div class="accordion" id="accordionPanelsStayOpenExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-              <button
-                class="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#panelsStayOpen-collapseOne"
-                aria-expanded="true"
-                aria-controls="panelsStayOpen-collapseOne">
-                Are your bags durable and long-lasting?
-              </button>
-            </h2>
-            <div
-              id="panelsStayOpen-collapseOne"
-              class="accordion-collapse collapse show"
-              aria-labelledby="panelsStayOpen-headingOne">
-              <div class="accordion-body">
-                <strong>Our Bags are durable and long</strong>
-                I use high-quality materials that are designed to withstand wear
-                and tear. This includes fabrics that are known for their
-                durability, such as nylon or canvas, as well as heavy-duty
-                zippers and hardware. Additionally, all of my bags are
-                reinforced with strong stitching to ensure that they can handle
-                heavy loads without breaking apart. Another factor that sets my
-                bags apart is the level of quality control that goes into their
-                production. Before a bag is released for sale, it undergoes
-                rigorous testing to ensure that it meets my high standards for
-                durability. This testing includes subjecting the bag to weight
-                and stress tests, as well as exposing it to extreme weather
-                conditions to ensure that it can withstand anything that comes
-                its way.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#panelsStayOpen-collapseTwo"
-                aria-expanded="false"
-                aria-controls="panelsStayOpen-collapseTwo">
-                What materials are the bags made of?
-              </button>
-            </h2>
-            <div
-              id="panelsStayOpen-collapseTwo"
-              class="accordion-collapse collapse"
-              aria-labelledby="panelsStayOpen-headingTwo">
-              <div class="accordion-body">
-                <strong>What materials are the bags made of?</strong>
-                Our bags are made from a variety of high-quality materials,
-                including leather, canvas, nylon, and polyester. The specific
-                materials used depend on the type and style of the bag. For
-                example, our leather bags are made from top-grain leather, which
-                is durable and has a timeless look that improves with age. Our
-                canvas bags are made from heavyweight canvas, which is tough and
-                resistant to tearing, while our nylon and polyester bags are
-                lightweight and perfect for travel or outdoor activities.
-                Regardless of the material used, we take great care in selecting
-                only the highest quality materials for our bags. Our
-                manufacturing process also includes rigorous quality control
-                measures to ensure that every bag meets our high standards for
-                durability and functionality. So, whether you choose a leather,
-                canvas, nylon, or polyester bag from us, you can trust that it
-                will be a reliable and long-lasting accessory that you can enjoy
-                for years to come.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#panelsStayOpen-collapseThree"
-                aria-expanded="false"
-                aria-controls="panelsStayOpen-collapseThree">
-                Do you offer free shipping on orders?
-              </button>
-            </h2>
-            <div
-              id="panelsStayOpen-collapseThree"
-              class="accordion-collapse collapse"
-              aria-labelledby="panelsStayOpen-headingThree">
-              <div class="accordion-body">
-                <strong>Do you offer free shipping on orders? </strong>
-                We understand that sometimes things don't work out, and you may
-                need to return a product. Our return policy is designed to be as
-                hassle-free as possible while ensuring that we can continue to
-                offer high-quality products at a fair price. If for any reason
-                you are not satisfied with your purchase, you can return it to
-                us within [number of days] days of receipt for a full refund or
-                exchange. Please note that the product must be unused, in its
-                original packaging, and with all tags and labels attached. To
-                initiate a return, simply contact our customer service team, and
-                they will provide you with a return authorization number and
-                instructions on how to return the product. Once we receive your
-                returned item, we will inspect it and process your refund or
-                exchange within [number of days] days. Please note that shipping
-                costs are non-refundable, and you will be responsible for any
-                return shipping fees unless the product is defective or damaged.
-                We also reserve the right to refuse a return if the product is
-                not in its original condition. At [company name], we value your
-                satisfaction and want you to be completely happy with your
-                purchase. If you have any questions or concerns about our return
-                policy, please don't hesitate to contact us. We're always here
-                to help!
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <main class="px-sm-5 pt-5">
+        <h1>SITE MAP</h1>
+        <ul>
+            <li>
+                <a href="index.html">
+                    HOMEPAGE
+                </a>
+            </li>
+            <li>
+                <a href="about.html">
+                    ABOUT
+                </a>
+            </li>
+            <li>
+                BAGS
+               <ul>
+                <li>
+                    <a href="bags-male.html">
+                        MEN BAGS
+                    </a>
+                </li>
+                <li>
+                    <a href="bag-female.html">
+                        FEMALE BAGS
+                    </a>
+                </li>
+               </ul> 
+            </li>
+            <li>
+                <a href="gallery.html">GALLERY</a>
+            </li>
+            <li>
+                <a href="contact.html">
+                    CONTACT
+                </a>
+            </li>
+            <li><a href="site-map.html">
+                SITE-MAP
+            </a></li>
+        </ul>
     </main>
     <!-- footer section start -->
     <footer id="footer">
